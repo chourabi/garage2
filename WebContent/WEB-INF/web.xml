@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>garage2</display-name>
+  <servlet>
+    <servlet-name>CarsServlet</servlet-name>
+    <servlet-class>servlets.CarsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarsServlet</servlet-name>
+    <url-pattern>/cars</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddCarsServlet</servlet-name>
+    <servlet-class>servlets.AddCarsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCarsServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteCarServlet</servlet-name>
+    <servlet-class>servlets.DeleteCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCarServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>UpdateCarServlet</servlet-name>
+    <servlet-class>servlets.UpdateCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCarServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+</web-app>
